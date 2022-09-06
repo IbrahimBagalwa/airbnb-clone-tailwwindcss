@@ -11,11 +11,30 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
   </head>
-  <body class="">
+  <body class="sm:m-2 lg:m-10 md:m-10 2xl:m-10">
     <div class="fixed top-0 left-0 right-0 w-full z-20 bg-white">
       <!-- start header -->
-      <div class="flex m-2 px-12">
-        <div class="flex-1">
+      <!-- mobile  header -->
+      <div class="w-50 m-3 p-3 rounded-full shadow-md">
+        <div class="flex">
+          <span class="material-symbols-outlined py-2"> search </span>
+          <p class="flex-3 mr-24">
+            <span class="font-semibold">Where to?</span>
+            <br />
+            <span class="text-gray-500 text-xs">Anywhere</span>
+            <span class="text-xs text-gray-500">Any week</span>
+            <span class="text-xs text-gray-500">Add guests</span>
+          </p>
+          <span
+            class="material-symbols-outlined rounded-full shadow-md bg-white py-3 px-3 bg-gray-50 border-gray-300"
+          >
+            sync_alt
+          </span>
+        </div>
+      </div>
+      <!-- end mobile header -->
+      <div class="hidden 2xl:flex lg:m-2 px-12">
+        <div class="sm:hidden lg:flex-1 md:flex-1 2xl:flex-1">
           <span class="flex p-2 cursor-pointer">
             <img
               class="h-7"
@@ -26,7 +45,7 @@
           </span>
         </div>
         <div
-          class="flex-1 rounded-full border-2 border-gray-300 cursor-pointer shadow-md hover:drop-shadow-lg"
+          class="lg:flex-1 md:flex-1 rounded-full border-2 border-gray-300 cursor-pointer shadow-md hover:drop-shadow-lg"
         >
           <span class="p-2 border-r text-sm">Anywhere</span>
           <span class="p-2 border-r text-sm">Any week</span>
@@ -35,7 +54,7 @@
             <span class="material-symbols-outlined text-white"> search </span>
           </span>
         </div>
-        <div class="flex-1">
+        <div class="lg:flex-1">
           <span class="flex justify-between">
             <span
               class="text-sm flex-1 py-2 ml-20 px-2 cursor-pointer hover:bg-gray-200 hover:rounded-full"
@@ -55,10 +74,10 @@
           </span>
         </div>
       </div>
-      <hr />
+      <hr class="hidden" />
       <!-- end header -->
       <!-- start hiro Menu -->
-      <div class="relative w-full font-poppins md:flex md:justify-between m-2">
+      <div class="relative w-full font-poppins md:flex md:justify-between">
         <ul
           class="flex absolute w-full left-0 right-0 overflow-x-auto gap-4 shadow-md md:shadow-none pt-5 py-2 px-5 bg-white z-10 md:justify-between"
         >
@@ -128,7 +147,7 @@
     </div>
     <!-- start Feeds -->
     <div
-      class="px-5 mt-48 flex flex-col gap-5 pb-10 md:grid md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-5"
+      class="px-5 mt-48 flex flex-col gap-5 pb-10 md:grid md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4"
     >
       <div>
         <div class="relative">
